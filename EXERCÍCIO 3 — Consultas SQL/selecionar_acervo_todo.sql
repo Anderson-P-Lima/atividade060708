@@ -1,0 +1,1 @@
+SELECT codigo, titulo, tipo, disponivel FROM item ORDER BY codigo;
