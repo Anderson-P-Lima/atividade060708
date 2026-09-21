@@ -18,11 +18,12 @@ O que fazer.
 2. classe abstrata Usuario (nome, quantidadeEmprestada) com limite de itens como método abstrato, implementado em Aluno e Professor.
 3. classe Biblioteca com emprestar(), devolver() e listarAcervo(), usando arrays de tamanho fixo.
 4. classe Main com um cenário de teste: cadastro, um empréstimo bem-sucedido e um recusado por limite atingido.
+
 💡 Dicas para desenvolver
-5. Prazo e multa variam por tipo de item — por isso são métodos abstratos, não atributos comuns.
-6. Não crie um setDisponivel() público: a disponibilidade muda como consequência de emprestar() e devolver().
-7. listarAcervo() deve percorrer ItemBiblioteca[] em um único laço, sem nenhum if verificando o tipo do item.
-8. Teste sua solução criando uma categoria nova (por exemplo, DVD) sem alterar nenhum método já escrito — se precisar alterar, revise onde a decisão de tipo vazou.
+1. Prazo e multa variam por tipo de item — por isso são métodos abstratos, não atributos comuns.
+2. Não crie um setDisponivel() público: a disponibilidade muda como consequência de emprestar() e devolver().
+3. listarAcervo() deve percorrer ItemBiblioteca[] em um único laço, sem nenhum if verificando o tipo do item.
+4. Teste sua solução criando uma categoria nova (por exemplo, DVD) sem alterar nenhum método já escrito — se precisar alterar, revise onde a decisão de tipo vazou.
 
 #### **EXERCÍCIO 2 — Modelagem do Banco de Dados**
 O mesmo cenário do Exercício 1, agora modelado como tabelas relacionais em PostgreSQL — sem herança: um item é "livro" ou "revista" por uma coluna tipo, e o mesmo vale para o usuário.
